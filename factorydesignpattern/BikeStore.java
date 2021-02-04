@@ -6,6 +6,11 @@ package factorydesignpattern;
  */
 public class BikeStore {
 
+    /**
+     * Orders a type of bike then creates the ordered bike
+     * @param type A String for the type of bike
+     * @return the bike
+     */
     public Bike orderBike(String type) {
         Bike bike = createBike(type);
 
@@ -14,6 +19,11 @@ public class BikeStore {
         return bike;
     }
 
+    /**
+     * Creates a new bike
+     * @param type A String for the type of bike
+     * @return the bike
+     */
     private Bike createBike(String type) {
         Bike bike = null;
 
